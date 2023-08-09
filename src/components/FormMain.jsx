@@ -20,7 +20,7 @@ export const FormMain = () => {
             return {
                 username: data.username,
                 email: data.email,
-                age: 35,
+                age: 0,
                 agree: false,
                 social: {
                     twitter: '',
@@ -74,7 +74,7 @@ export const FormMain = () => {
                         validate: {
                             notAdmin: (fieldValue) => {
                                 return (
-                                    fieldValue !== 'www@www.com' | 'FFDdtlbnt другой адресс'
+                                    fieldValue !== 'www@www.com' | 'Введите другой адресс'
                                 )
                             },
                             notBlackListed: (fieldValue) => {
